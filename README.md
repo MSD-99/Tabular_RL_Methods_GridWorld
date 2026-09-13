@@ -2,8 +2,9 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)
 ![RL](https://img.shields.io/badge/Reinforcement%20Learning-Tabular%20Methods-0052CC?style=for-the-badge)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-This repository provides a comprehensive comparative analysis of four foundational tabular Reinforcement Learning algorithms on a Grid World environment. It evaluates both prediction (state-value estimation) and control (optimal policy finding) methods.
+This repository compares four foundational tabular reinforcement-learning algorithms in a small Grid World. It covers prediction (state-value estimation) and control (policy learning).
 
 ## 📌 Project Overview
 
@@ -19,7 +20,7 @@ The implemented algorithms include:
 
 ## 📊 Visualizations & Results
 
-The notebook generates various heatmaps and learning curves comparing the algorithms' value function estimations, policy convergence, and learning efficiency.
+The notebook generates value heatmaps, learned-policy views, and reward curves from its configured runs. These outputs illustrate algorithm behavior in this environment; they are not multi-seed convergence benchmarks.
 
 ### Sample Outputs
 <p align="center">
@@ -35,7 +36,7 @@ The notebook generates various heatmaps and learning curves comparing the algori
   <img src="assets/tabular_rl_output_6.png" width="45%" alt="Output 6" />
 </p>
 
-*(Note: The exact visualizations correspond to value function heatmaps for MC vs TD, and optimal policies for SARSA vs Q-Learning).*
+The visualizations include value-function heatmaps for MC versus TD and learned policies for SARSA versus Q-Learning.
 
 ---
 
@@ -47,3 +48,9 @@ cd Tabular_RL_Methods_GridWorld
 pip install -r requirements.txt
 jupyter lab
 ```
+
+Open `tabular_rl_gridworld_comparison.ipynb` and run the cells in order. No external dataset or pretrained model is required.
+
+## License
+
+Released under the [MIT License](LICENSE).
